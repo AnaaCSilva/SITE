@@ -11,6 +11,40 @@ a {
     transition: 0.3s;
 }
 
+/* Container que envolve a imagem e o texto */
+.logo {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente a imagem e o texto */
+    gap: 15px;           /* Espaço exato entre a imagem e o texto */
+}
+
+/* Estilo específico para a imagem da Uniube */
+.logo-img {
+    height: 45px;        /* Altura recomendada para o menu */
+    width: auto;         /* Mantém a proporção da imagem */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05); /* Efeito sutil ao passar o mouse na logo */
+}
+
+/* Estilo específico para o texto DC UNIVERSE */
+.logo-txt {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--dc-blue);
+    letter-spacing: 4px;
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: 0.3s;
+}
+
+.logo-txt:hover {
+    text-shadow: 0 0 15px rgba(74, 158, 255, 0.6); /* Brilho estilo herói */
+    color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
