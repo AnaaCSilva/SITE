@@ -5,12 +5,6 @@
     --text-light: #e5e5e5;
 }
 
-a {
-    color: #4a9eff;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
 /* Container que envolve a imagem e o texto */
 .logo {
     display: flex;
@@ -43,6 +37,12 @@ a {
 .logo-txt:hover {
     text-shadow: 0 0 15px rgba(74, 158, 255, 0.6); /* Brilho estilo herói */
     color: white;
+}
+
+a {
+    color: #4a9eff;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 * {
