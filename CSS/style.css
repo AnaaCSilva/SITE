@@ -1,0 +1,181 @@
+:root {
+    --bg-color: #0a0a0a;
+    --dc-blue: #4a9eff;
+    --dc-dark-blue: #0f1c38;
+    --text-light: #e5e5e5;
+}
+
+a {
+    color: #4a9eff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #050505;
+    color: var(--text-light);
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ==================== HERO COM BATMAN ==================== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(rgba(5, 8, 20, 0.88), rgba(5, 8, 25, 0.94)),
+                url('../IMG/batman.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    max-width: 850px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 4.8rem;
+    color: var(--dc-blue);
+    margin-bottom: 25px;
+    text-shadow: 0 0 30px rgba(74, 158, 255, 0.5);
+    letter-spacing: 4px;
+}
+
+.descricao {
+    font-size: 1.35rem;
+    margin-bottom: 45px;
+    opacity: 0.9;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 45px;
+    background-color: #1e4a8c;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 2px solid var(--dc-blue);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--dc-blue);
+    color: #0a0f1f;
+    transform: translateY(-4px);
+}
+
+/* ==================== NAVBAR ==================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5%;
+    background: rgba(10, 15, 40, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #1a2a4a;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--dc-blue);
+    letter-spacing: 4px;
+}
+
+/* Hambúrguer */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.hamburger span {
+    width: 32px;
+    height: 3px;
+    background-color: #e5e5e5;
+    transition: all 0.4s ease;
+}
+
+/* Menu Mobile */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 15, 40, 0.98);
+    padding: 25px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.menu-list {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-list a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 15px;
+    display: block;
+}
+
+.menu-list a:hover {
+    background-color: #1a2a4a;
+    color: var(--dc-blue);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3.4rem;
+    }
+    
+    .descricao {
+        font-size: 1.2rem;
+    }
+}
+
+/* ==================== ESTILO DO RODAPÉ ==================== */
+.rodape {
+    background-color: #0a0f1f; 
+    color: white;              
+    padding: 30px 5%;          
+    text-align: center;        
+    margin-top: 50px;          
+    border-top: 2px solid #1e3a6e; /* Linha sutil no topo, combinando com o estilo */
+}
+
+.rodape p {
+    margin: 8px 0;             
+    font-size: 1rem;
+    opacity: 0.8;              
+}
