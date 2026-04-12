@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloqueia o acesso direto às pastas de sistema para os robôs
+Disallow: /CSS/
+Disallow: /JS/
+
+# Indica ao Google onde está o mapa do seu site
+Sitemap: https://anaacsilva.github.io/site/sitemap.xml
